@@ -1,0 +1,618 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+  max-width: 100%;
+}
+
+.wrapper2{
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.wrapper3{
+  max-width: 45%;
+  margin: 0 auto;
+}
+/*max width images*/
+.summerTees img, .noragiImage img, .rickOwensGridContainer img, .rickOwensGimpImage img, .rickOwensSlideshowContainer img, .winterShoes img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/*flickity page dots*/
+.flickity-page-dots{
+  display: none;
+}
+
+/*navigation*/
+.topHeaderNav{
+  background: black;
+  position: absolute;
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+}
+
+.leftTopNav{
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.leftTopNav h2{
+  display: inline-block;
+  color: white;
+}
+
+.rightTopNav{
+  float: right;
+  margin-right: 30px;
+  margin-top: 7px;
+}
+
+.rightTopNav ul li{
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.rightTopNav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.rightTopNav ul li a:hover{
+  border-bottom: 1px solid white;
+}
+
+.rightTopNav ul{
+  display: flex;
+  padding: 0;
+}
+
+
+/*about section*/
+.aboutSection{
+  min-height: 100vh;
+}
+
+.aboutTitle{
+  text-align: center;
+}
+
+.aboutTitle p{
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+span.aboutText{
+  font-style: italic;
+}
+
+
+/*header section*/
+header{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.videoContainer{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.acrVideoContainer{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+video{
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headerTitle h1{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15vw;
+}
+
+.headerButton .fa{
+    position: absolute;
+    display: none;
+    color: white;
+    bottom: 70px;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.headerButton{
+  text-align: center;
+}
+
+/*Summer*/
+
+/*tees section*/
+.summerTeesSection{
+  margin-bottom: 100px;
+}
+
+.summerTitle h2, .fallTitle h2, .winterTitle h2, .springTitle h2{
+  color: black;
+  font-size: 10vw;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.summerTees{
+  display: flex;
+}
+
+.summerTees figure{
+  margin: auto;
+}
+
+.summerTees figcaption, .winterShoes figcaption{
+  text-align: center;
+  font-style: italic;
+}
+
+/*visvim section*/
+/*noragi*/
+
+.noragi{
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.noragiImage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noragiImage figcaption, .fordImages1 figcaption, .fordImages2 figcaption {
+  display: none;
+}
+
+.noragiImage:hover figcaption, .fordImages2:hover figcaption, .fordImages1:hover figcaption{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to left, rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+}
+
+
+.noragiTextAndSlideshow{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.noragiText h4, .rickOwensGimpDescription h4, .acrText h4{
+  display: inline-block;
+  padding-right: 40px;
+  font-size: 2.3rem;
+  margin: 0 0 20px 0;
+  border-bottom: 2px solid red;
+}
+
+.noragiText{
+  margin-bottom: 20px;
+}
+
+.noragiText p{
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+
+/*suicoke sandals*/
+.suicoke{
+  text-align: center;
+  font-style: italic;
+}
+
+.suicoke img{
+  max-width: 100%;
+}
+
+/*fall section*/
+.rickOwensSummaryContainer{
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.rickOwensColumnOne, .rickOwensColumnTwo{
+  display: flex;
+  flex-direction: column;
+}
+
+.rickOwensColumnOne p, .rickOwensColumnTwo p{
+  padding: 0 30px 0 30px;
+  font-size: 1.5rem;
+}
+
+/*rick owens image grid*/
+.rickOwensGridContainer{
+  display: flex;
+  margin-bottom: 100px;
+}
+
+/*gimp hoodie*/
+.rickOwensGimpContainer{
+  display: flex;
+  margin-bottom: 200px;
+}
+
+.rickOwensGimpDescription{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+.rickOwensGimpImage{
+  flex-basis: 50%;
+}
+
+.rickOwensGimpDescription p{
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 40px;
+}
+
+.rickOwensGimpDescription ul{
+  font-size: 1.5rem;
+}
+
+/*3 rick owens slideshows*/
+.rickOwensSlideshowContainer{
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.rickOwensSlideshow1, .rickOwensSlideshow2, .rickOwensSlideshow3{
+  width: 33.33%;
+}
+
+/*winter*/
+/*acr slideshows and text*/
+.acrSlideshowContainer{
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+.acrSlideshow1, .acrText, .acrSlideshow2{
+  width: 33%;
+}
+
+.acrText{
+  padding: 30px;
+}
+
+.acrText p{
+  font-size: 1.5rem;
+  margin: 0 0 15px 0;
+}
+
+/*winter shoes*/
+.winterShoes{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+/*spring section*/
+.springRow1, .springRow2{
+  display: flex;
+  justify-content: space-around;
+  /*margin-bottom: 90px;*/
+}
+
+.springRow1{
+  margin-bottom: 90px;
+}
+
+.fordTitle h3{
+  font-size: 7rem;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  padding: 30px;
+}
+
+.fordTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  background: #f6f6f6;
+}
+
+.fordImages1{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fordText{
+  background: #f6f6f6;
+}
+
+.fordText1 p{
+  font-size: 2rem;
+  margin: 0;
+  padding: 20px;
+}
+
+.fordImages1 img, .fordImages2 img{
+  display: block;
+}
+
+/*footer*/
+.footerContainer{
+  padding: 20px 0 70px 0;
+  background: black;
+  border-bottom: 1px solid lightgrey;
+}
+
+.footerButton{
+  text-align: center;
+}
+
+.footerButton .fa{
+  color: white;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+.footerTitle h2{
+  font-size: 2.5rem;
+  color: lightgrey;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footerIcons{
+  text-align: center;
+}
+
+.footerIcons .fa{
+  margin-right: 10px;
+  padding-left: 6px;
+  font-size: 1.5rem;
+  color: darkgrey;
+}
+
+.finalLine h5{
+  text-transform: uppercase;
+  text-align: center;
+  color: darkgrey;
+  background: black;
+  font-weight: lighter;
+  padding-top: 5px;
+  margin: 0;
+}
+
+/*==========Media Queries====================*/
+/* Large Devices, Wide Screens */
+   @media only screen and (max-width : 1200px) {
+
+/*===============Summer section==============*/
+    .summerTees figure{
+      margin: 0;
+    }
+
+    .summerTees{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .summerTees figure{
+      margin-bottom: 20px;
+    }
+
+/*============Fall Section===================*/
+
+    .fallSection{
+      max-width: 90%;
+    }
+
+/*============Winter Section=================*/
+    .acrSlideshowContainer{
+      display: inline-block;
+    }
+
+    .acrText{
+      margin-right: 0;
+    }
+
+    .acrSlideshow1, .acrText, .acrSlideshow2{
+      width: 100%;
+    }
+
+    .acrText{
+      margin: 50px 0 50px 0;
+      text-align: center;
+    }
+  }
+
+   @media only screen and (max-width : 1071px) {
+/*================Summer Section========================*/
+    .noragi{
+      display: inline-block;
+   }
+
+    .noragiTextAndSlideshow{
+      width: 100%;
+      text-align: center;
+      padding: 0 20px 0 20px;
+    }
+  }
+
+   @media only screen and (max-width : 1010px) {
+/*===============Fall Section=============================*/
+  .rickOwensGimpContainer{
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .rickOwensGimpDescription{
+    width: 100%;
+    padding: 100px 50px 0 50px;
+  }
+
+  .rickOwensSlideshow1, .rickOwensSlideshow2, .rickOwensSlideshow3{
+    width: 100%;
+  }
+
+  .rickOwensSlideshowContainer{
+   flex-wrap: wrap;
+  }
+}
+
+   @media only screen and (max-width : 912px) {
+/*=============Spring Section==================*/
+  .springRow1, .springRow2{
+    display: block;
+    margin: 0;
+  }
+
+  .fordTitle{
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+}
+
+   @media only screen and (max-width : 992px) {
+/*===========Fall Section====================*/
+  .rickOwensSummaryContainer{
+    flex-direction: column;
+  }
+}
+
+  @media only screen and (max-width : 958px) {
+/*===========About Section====================*/
+  .aboutSection{
+    max-width: 75%;
+  }
+}
+
+   @media only screen and (max-width : 835px) {
+/*===============Winter Section=================*/
+    .acrVideoContainer video{
+      display: none;
+    }
+
+    .acrVideoContainer{
+      background: url(images/acrvidpic.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media only screen and (max-width : 814px) {
+/*===============Winter Section=================*/
+    .summerTees figure{
+      max-width: 50%;
+    }
+  }
+
+   @media only screen and (max-width : 768px) {
+/*============Header Background Video============*/
+    .videoContainer video{
+      display: none;
+    }
+
+    .videoContainer{
+      background: url(images/rainvidpic.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+
+/*===============Winter Section=================*/
+    .winterShoes{
+      flex-wrap: wrap;
+    }
+  }
+
+    @media only screen and (max-width : 610px) {
+/*==============Fall Section=====================*/
+    span.gimp{
+      display: inline-block;
+      padding-right: 40px;
+      border-bottom: 2px solid red;
+    }
+
+    .rickOwensGimpDescription h4{
+      border-bottom: none;
+    }
+  }
+
+   @media only screen and (max-width : 480px) {
+/*===============Fall Section====================*/
+    .rickOwensGimpDescription{
+      padding-top: 50px;
+      padding-left: 10px;
+   }
+
+   .rickOwensGimpDescription{
+    padding-right: 0;
+   }
+
+   .rickOwensGimpDescription h4{
+      border-bottom: none;
+    }
+}
